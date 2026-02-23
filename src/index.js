@@ -1,30 +1,31 @@
-const http = require('http');
+const express = require('express');
 
-const server = http.createServer((req, res) => {
-    const { url } = req;
-    console.log(url);
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    if (url === '/') {
-        res.end("Hello from Node.js");
-    } else if (url === '/contact') {
-        res.end('The Contact Page');
-    } else if (url === '/about') {
-        res.end('The About Page');
-    } else {
-        res.writeHead(404);
-        res.end('Not Found');
-    }
+const app = express();
 
+app.get('/', (req, res) => {
+    res.send("Hello from Node.js");
+});
+
+app.get('/contact', (req, res) => {
+    res.send("The Contact Page");
+});
+
+app.get('/about', (req, res) => {
+    res.send("The About Page");
+});
+
+app.use((req, res, next) => {
+    res.status(404).send("Not Found");
 });
 
 // ONLY start the server if this file is run directly (node src/index.js)
 // This prevents Jest from starting a real server during tests
 if (require.main === module) {
     const PORT = 3000;
-    server.listen(PORT, () => {
+    app.listen(PORT, () => {
         console.log(`Server running at http://localhost:${PORT}`);
     });
 }
 
-module.exports = server;
+module.exports = app;
+
