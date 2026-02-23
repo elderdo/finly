@@ -1,0 +1,171 @@
+{
+    "[javascriptreact]": {
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.hover": {
+            "enabled": false
+        },
+        "editor.parameterHints.enabled": false,
+        "editor.inlineSuggest.enabled": false,
+        "editor.hover.enabled": "off"
+    },
+    "editor.suggest.showStatusBar": false,
+    "javascript.validate.enable": false,
+    "javascript.autoClosingTags": false,
+    "javascriptreact.autoClosingTags": false,
+    "emmet.triggerExpansionOnTab": false,
+    "emmet.showExpandedAbbreviation": "never",
+    "emmet.includeLanguages": {},
+    "emmet.showSuggestionsAsSnippets": false,
+    "typescript.validate.enable": false,
+    "audioCues.enabled": "off",
+    "editor.accessibilitySupport": "off",
+    "notifications.sounds.enabled": false,
+    "cSpell.diagnosticLevel": "Error",
+    "cSpell.words": [
+        "dotenv",
+        "elderdo",
+        "eslintcache",
+        "finly",
+        "GOBACK",
+        "hooksopedia",
+        "jscoverage",
+        "jspm",
+        "lecturecount",
+        "nuxt",
+        "Opedia",
+        "pids",
+        "programing",
+        "stylelintcache",
+        "Sveltekit",
+        "taskopedia",
+        "vite",
+        "vitepress",
+        "vuepress",
+        "Walley",
+        "wscript",
+    ],
+    // Disable GitHub Copilot entirely
+    // This was effective for stopping code
+    // suggestions
+    "github.copilot.enable": {
+        "*": false
+    },
+    // Disable IntelliSense for C#
+    "[csharp]": {
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.inlineSuggest.enabled": false,
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.showWords": false,
+        "editor.snippetSuggestions": "none",
+        "editor.tabCompletion": "off"
+    }, // Disable IntelliSense for JavaScript
+    "[javascript]": {
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.inlineSuggest.enabled": false,
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.showWords": false,
+        "editor.snippetSuggestions": "none",
+        "editor.tabCompletion": "off"
+    },
+    // Disable IntelliSense for HTML
+    "[html]": {
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.inlineSuggest.enabled": false,
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.showWords": false,
+        "editor.snippetSuggestions": "none",
+        "editor.tabCompletion": "off",
+        "editor.hover": {
+            "enabled": false
+        },
+        "editor.parameterHints.enabled": false,
+        "editor.hover.enabled": "off",
+    },
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.parameterHints.enabled": false,
+    "editor.hover.enabled": "off",
+    "editor.codeLens": false,
+    // Disable inline suggestions from various sources
+    "editor.inlineSuggest.enabled": false,
+    // Disable snippet suggestions
+    "editor.snippetSuggestions": "none",
+    // Disable auto-closing brackets and quotes
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingTags": "never",
+    // Disable auto-surrounding selections with brackets/quotes
+    "editor.autoSurround": "never",
+    // Disable ALL extensions suggestions
+    "extensions.ignoreRecommendations": true,
+    // Disable all Copilot features
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableCodeActions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.suggest.showFunctions": false,
+    "editor.suggest.showMethods": false,
+    "editor.suggest.showConstructors": false,
+    "editor.suggest.showFields": false,
+    "editor.suggest.showVariables": false,
+    "editor.suggest.showClasses": false,
+    "editor.suggest.showModules": false,
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showSnippets": false,
+    "editor.suggest.showTexts": false,
+    "editor.suggest.showWords": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.wordBasedSuggestionsMode": "off",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "off",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "editor.inlineSuggest.experimental.emptyResponseInformation": false,
+    "editor.inlineSuggest.suppressInSnippetMode": false,
+    "editor.inlineSuggest.triggerCommandOnProviderChange": false,
+    "editor.screenReaderAnnounceInlineSuggestion": false,
+    "editor.suggest.matchOnWordStartOnly": false,
+    "editor.suggest.showColors": false,
+    "accessibility.signals.terminalBell": {
+        "sound": "off"
+    },
+    "terminal.integrated.enableVisualBell": false,
+    "[powershell]": {
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.inlineSuggest.enabled": false,
+        "github.copilot.nextEditSuggestions.enabled": false
+    }
+}

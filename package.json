@@ -1,0 +1,17 @@
+{
+  "name": "finly",
+  "version": "1.0.0",
+  "description": "Finly - the invoicing software for businesses and freelancers",
+  "license": "ISC",
+  "author": "Douglas S. Elder",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jest": "^25.0.0",
+    "nodemon": "^3.1.14"
+  }
+}
