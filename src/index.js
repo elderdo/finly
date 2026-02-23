@@ -17,7 +17,14 @@ const server = http.createServer((req, res) => {
     }
 
 });
-const PORT = 3000;
-server.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-});
+
+// ONLY start the server if this file is run directly (node src/index.js)
+// This prevents Jest from starting a real server during tests
+if (require.main === module) {
+    const PORT = 3000;
+    server.listen(PORT, () => {
+        console.log(`Server running at http://localhost:${PORT}`);
+    });
+}
+
+module.exports = server;
