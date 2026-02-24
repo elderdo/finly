@@ -27,6 +27,7 @@
     "notifications.sounds.enabled": false,
     "cSpell.diagnosticLevel": "Error",
     "cSpell.words": [
+        "Barebones",
         "dotenv",
         "elderdo",
         "eslintcache",
