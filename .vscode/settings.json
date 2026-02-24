@@ -28,6 +28,12 @@
     "cSpell.diagnosticLevel": "Error",
     "cSpell.words": [
         "Barebones",
+        "tailwindcss",
+        "postcss",
+        "autoprefixer",
+        "postcsscli",
+        "EJS",
+        "Sebhastian",
         "dotenv",
         "elderdo",
         "eslintcache",
