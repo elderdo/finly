@@ -4,21 +4,24 @@ const morgan = require('morgan');
 const app = express();
 app.use(morgan('dev'));
 
+app.set('views', './views');
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.send("Hello from Node.js");
+    res.render('index', { message: "Hello From Node.js" });
 });
 
 app.get('/contact', (req, res) => {
-    res.send("The Contact Page");
+    res.render('index', { message: 'The Contact Page' });
 });
 
 app.get('/about', (req, res) => {
-    res.send("The About Page");
+    res.render('index', { message: 'The About Page' });
 });
 
-app.use((req, res, next) => {
-    res.status(404).send("Not Found");
+
+app.get('/*splat', (req, res) => {
+    res.status(404).render('index', { message: "Not Found" });
 });
 
 // ONLY start the server if this file is run directly (node src/index.js)
