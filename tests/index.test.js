@@ -8,11 +8,22 @@ describe('Barebones Node.js Routing', () => {
     // This test sends a GET request to the home route (`/`).
     // We expect:
     // 1) status code 200 (success)
+    // 2) response text to contain a <title>Document</title> from the partials directory
+    test('GET / should return an html title of "Document"', async () => {
+        const res = await request(server).get('/');
+        expect(res.statusCode).toBe(200);
+        expect(res.text).toContain('<title>Document</title>');
+    });
+
+    // This test sends a GET request to the home route (`/`).
+    // We expect:
+    // 1) status code 200 (success)
     // 2) response text to match the home page message
     test('GET / should return Hello message', async () => {
         const res = await request(server).get('/');
         expect(res.statusCode).toBe(200);
-        expect(res.text).toBe("Hello from Node.js");
+        expect(res.text).toContain('<title>Document</title>');
+        expect(res.text).toMatch(/Hello From Node\.js/);
     });
 
     // This test checks the `/contact` route.
@@ -20,7 +31,7 @@ describe('Barebones Node.js Routing', () => {
     test('GET /contact should return Contact Page', async () => {
         const res = await request(server).get('/contact');
         expect(res.statusCode).toBe(200);
-        expect(res.text).toBe('The Contact Page');
+        expect(res.text).toMatch(/The Contact Page/);
     });
 
     // This test checks the `/about` route.
@@ -28,7 +39,7 @@ describe('Barebones Node.js Routing', () => {
     test('GET /about should return About Page', async () => {
         const res = await request(server).get('/about');
         expect(res.statusCode).toBe(200);
-        expect(res.text).toBe('The About Page');
+        expect(res.text).toMatch(/The About Page/);
     });
 
     // This test checks what happens when a route does not exist.
@@ -38,7 +49,7 @@ describe('Barebones Node.js Routing', () => {
     test('GET /invalid-route should return 404', async () => {
         const res = await request(server).get('/unknown');
         expect(res.statusCode).toBe(404);
-        expect(res.text).toBe('Not Found');
+        expect(res.text).toMatch(/Not Found/);
     });
 });
 
