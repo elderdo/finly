@@ -1,0 +1,22 @@
+Folder PATH listing
+Volume serial number is 403D-8538
+C:\USERS\DOUGLAS\DOCUMENTS\NODEJS\FINLY\PUBLIC
+\---styles
+        output.css
+        tailwind.css
+        
+Folder PATH listing
+Volume serial number is 403D-8538
+C:\USERS\DOUGLAS\DOCUMENTS\NODEJS\FINLY\SRC
+    index.js
+    
+No subfolders exist 
+
+Folder PATH listing
+Volume serial number is 403D-8538
+C:\USERS\DOUGLAS\DOCUMENTS\NODEJS\FINLY\VIEWS
+|   index.ejs
+|   
+\---partials
+        head.ejs
+        

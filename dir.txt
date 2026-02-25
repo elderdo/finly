@@ -1,0 +1,24 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 403D-8538
+
+ Directory of C:\Users\Douglas\Documents\NodeJS\finly
+
+02/25/2026  12:37 PM    <DIR>          .
+02/23/2026  11:32 AM    <DIR>          ..
+02/23/2026  11:48 AM             2,182 .gitignore
+02/23/2026  02:59 PM    <DIR>          .husky
+02/23/2026  11:36 AM    <DIR>          .vscode
+02/25/2026  12:37 PM               169 dir.txt
+02/24/2026  04:32 PM    <DIR>          docs
+02/23/2026  01:53 PM               143 jest.setup.js
+02/25/2026  08:48 AM    <DIR>          node_modules
+02/25/2026  08:48 AM           261,865 package-lock.json
+02/25/2026  10:49 AM             1,081 package.json
+02/24/2026  03:20 PM    <DIR>          public
+02/23/2026  12:03 PM    <DIR>          src
+02/25/2026  12:10 PM               317 tailwind.config.js
+02/23/2026  01:40 PM    <DIR>          tests
+02/25/2026  12:34 PM               479 tree.txt
+02/24/2026  11:08 AM    <DIR>          views
+               7 File(s)        266,236 bytes
+              10 Dir(s)  364,568,457,216 bytes free

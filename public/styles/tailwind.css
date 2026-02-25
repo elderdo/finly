@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+/* This tells Tailwind where to look for your classes */
+@source "../../views/**/*.ejs";
+@source "../../src/**/*.js";

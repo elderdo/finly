@@ -28,6 +28,7 @@
     "cSpell.diagnosticLevel": "Error",
     "cSpell.words": [
         "Barebones",
+        "daisyui",
         "tailwindcss",
         "postcss",
         "autoprefixer",

@@ -4,8 +4,12 @@ module.exports = {
         "./public/**/*.html",
         "./src/**/*.js"
     ],
-    theme: {
-        extend: {},
-    },
-    plugins: [],
+    safelist: [
+        "text-emerald-500",
+        "text-emerald-800",
+        "btn",
+        "btn-primary"
+    ],
+    theme: { extend: {} },
+    plugins: [require('daisyui')],
 };

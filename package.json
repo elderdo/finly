@@ -8,7 +8,7 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js",
+    "dev": "nodemon --watch ./src --watch ./views --ext js,ejs ./src/index.js",
     "dev:css": "npx @tailwindcss/cli -i ./public/styles/tailwind.css -o ./public/styles/output.css --watch",
     "test": "jest",
     "prepare": "husky"
@@ -22,6 +22,7 @@
   "devDependencies": {
     "autoprefix": "^1.0.1",
     "autoprefixer": "^10.4.24",
+    "daisyui": "^5.5.19",
     "husky": "^9.1.7",
     "jest": "^30.2.0",
     "nodemon": "^3.1.14",
